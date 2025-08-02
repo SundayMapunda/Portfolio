@@ -1,89 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunday Mapunda Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio, a Full-Stack Developer, React, Java, Python, and PHP"
+    />
+    <meta
+      name="keywords"
+      content="Sunday Mapunda, Portfolio, FullStack Developer, HTML, CSS, Java, Python, PHP, React"
+    />
+    <meta name="author" content="Sunday Mapunda" />
 
-  <title>Sunday Mapunda Portfolio</title>
-  <meta name="description"
-    content="Portfolio, a Full-Stack Developer skilled in React, Java, Python, and PHP. #PowerLearnProject" />
-  <meta name="keywords"
-    content="Sunday Mapunda, Portfolio, FullStack Developer, PowerLearnProject, HTML, CSS, Java, Python, PHP, React" />
-  <meta name="author" content="Sunday Mapunda" />
+    <meta property="og:title" content="Sunday Mapunda | Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Explore Sunday Mapunda's Full-Stack Developer portfolio."
+    />
+    <meta property="og:image" content="sundaymapunda.png" />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:title" content="Sunday Mapunda | Full-Stack Developer" />
-  <meta property="og:description" content="Explore Sunday Mapunda's Full-Stack Developer portfolio." />
-  <meta property="og:image" content="sundaymapunda.png" />
-  <meta property="og:type" content="website" />
-  <!-- meta property="og:url" content="https://myportfolio.com" / -->
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <!-- a href="#">PORTFOLIO</a -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">☰</label>
+  <body>
+    <header>
+      <nav>
+        <!-- this checkbox tracks the opening and closing of menu on small devices/mobile phones -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
 
-      <ul class="menu">
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#contacts">CONTACTS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="center">
-    <section aria-labelledby="portfolio-title">
-      <h1 id="portfolio-title">HACKATHON PORTFOLIO</h1>
-      <h2>#PowerLearnProject</h2>
-      <img src="sundaymapunda.png" alt="Portrait of Albert Einstein" />
-      <p><strong>SUNDAY MAPUNDA</strong></p>
-    </section>
-
-    <section id="about" aria-labelledby="about-title">
-      <h3 id="about-title">ABOUT</h3>
-      <p>
-        <a href="resume.pdf" download>
-          <button type="button">MY RESUME</button>
-        </a>
-      </p>
-      <p>FullStack Developer</p>
-    </section>
-
-    <section id="skills" aria-labelledby="skills-title">
-      <h3 id="skills-title">MY SKILLS</h3>
-      <article>
-        <h4>FRONTEND</h4>
-        <ul class="programs">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
+        <ul class="menu">
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
         </ul>
-      </article>
-      <article>
-        <h4>BACKEND</h4>
-        <ul class="programs">
-          <li>JAVA</li>
-          <li>Python</li>
-          <li>PHP</li>
-        </ul>
-      </article>
-    </section>
+      </nav>
+    </header>
 
-    <section id="contacts" aria-labelledby="contacts-title">
-      <h3 id="contacts-title">CONTACTS</h3>
-      <p>Email: <a href="mailto:albert@gmail.com">sunnyjumapili@gmail.com</a></p>
-      <p>Phone: <a href="tel:+255763390105">+255 763 390 105</a></p>
-      <p>GitHub: <a href="https://github.com/SundayMapunda" target="_blank" rel="noopener">SundayMapunda</a></p>
-    </section>
-  </main>
+    <main id="center">
+      <section aria-labelledby="portfolio-title">
+        <h1 id="portfolio-title">MY PORTFOLIO</h1>
+        <img id="profile" src="images/sundaymapunda.png" alt="user's image" />
+        <p><strong>SUNDAY MAPUNDA</strong></p>
+      </section>
 
-  <footer>
-    <p>&copy; Sunday Mapunda 2025</p>
-  </footer>
-</body>
+      <section id="about" aria-labelledby="about-title">
+        <h3 id="about-title">ABOUT</h3>
+        <p>
+          <a href="resume.pdf" download>
+            <button type="button">DOWNLOAD MY CV</button>
+          </a>
+        </p>
+        <p>
+          Hi I'm Sunday Mapunda, a passionate programmer with a love for solving
+          real world problems through code. <br />
+          I'm constantly learning, experimenting and growing in this
+          ever-evolving tech world.
+        </p>
 
+        <article id="interests">
+          <h4>INTERESTS</h4>
+          <p>
+            <b>Web Development:</b> Building responsive Websites, exploring new
+            frameworks ad solving coding challenges
+          </p>
+
+          <p>
+            <b>Writing:</b> Crafting imaginative stories and exploring creative
+            narratives
+          </p>
+
+          <p>
+            <b>Reading:</b> I enjoy reading all kinds of books from comics to
+            self-growth and sci-fi.
+          </p>
+
+          <p>
+            <b>Learning new language:</b> I expand my skills and understand
+            other cultures by learning new languages...currently learning
+            Spanish- Hola amigo.
+          </p>
+        </article>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h3 id="skills-title">MY SKILLS</h3>
+        <article>
+          <h4>FRONTEND</h4>
+          <article class="wrapper">
+            <div class="card">
+              <img src="images/html.png" alt="html" />
+              <h3>HTML</h3>
+            </div>
+
+            <div class="card">
+              <img src="images/css.png" alt="css" />
+              <h3>CSS</h3>
+            </div>
+
+            <div class="card">
+              <img src="images/js.png" alt="javascript" />
+              <h3>
+                JAVA- <br />
+                SCRIPT
+              </h3>
+            </div>
+
+            <div class="card">
+              <img src="images/react.png" alt="react" />
+              <h3>REACT</h3>
+            </div>
+          </article>
+        </article>
+        <article>
+          <h4>BACKEND</h4>
+          <article class="wrapper">
+            <div class="card">
+              <img src="images/java.jpg" alt="java" />
+              <h4>JAVA</h4>
+            </div>
+
+            <div class="card">
+              <img src="images/python.webp" alt="python" />
+              <h4>PYTHON</h4>
+            </div>
+
+            <div class="card">
+              <img src="images/php.png" alt="php" />
+              <h4>PHP</h4>
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h3 id="projects-title">PROJECTS</h3>
+        <article id="projects-wrapper">
+          <article class="project-card">
+            <h4>Bright & Shine</h4>
+            <p>
+              This is a platforms that streamline the buying process of clothes
+            </p>
+            Link:
+            <a href="https://sundaymapunda.github.io/bright-and-shine/"
+              >Bright & Shine</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h4>Daily Quotes</h4>
+            <p>Wisdom and knowledge brought to you in form of quotes, daily.</p>
+            Link:
+            <a href="https://sundaymapunda.github.io/quotes/">Daily Quotes</a>
+          </article>
+        </article>
+      </section>
+
+      <section id="contacts" aria-labelledby="contacts-title">
+        <h3 id="contacts-title">CONTACTS</h3>
+        <p>
+          Email: <a href="mailto:albert@gmail.com">sunnyjumapili@gmail.com</a>
+        </p>
+        <p>Phone: +255 763 390 105</p>
+        <p>
+          GitHub:
+          <a
+            href="https://github.com/SundayMapunda"
+            target="_blank"
+            rel="noopener"
+            >SundayMapunda</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Sunday Mapunda 2025</p>
+    </footer>
+  </body>
 </html>
