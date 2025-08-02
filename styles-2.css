@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#center {
+  text-align: center;
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+  background-color: #333;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+
+header {
+  background-color: grey
+}
+
+img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+button {
+  padding: 8px;
+  background-color: brown;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+#about {
+  margin: 30px 0;
+  background-color: #f9f9f9;
+}
+
+#skills {
+  margin: 30px 0;
+  background-color: #e1f5fe;
+}
+
+#contacts {
+  margin: 30px 0;
+  background-color: #fff3e0;
+}
+
+footer {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+}
