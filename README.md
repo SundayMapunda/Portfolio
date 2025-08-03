@@ -61,16 +61,3 @@ The layout adjusts to various screen sizes. On smaller screens (under 768px):
 - Built during: **Power Learn Project Hackathon 2025**
 
 ---
-
----
-
-## 🏅 Badges & Bragging Rights
-
-![Vercel Deploy](https://img.shields.io/badge/Deployed%20on-Vercel-000?logo=vercel&style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Mobile-Friendly-Yes-00c853?style=for-the-badge)
-![Code Chaos](https://img.shields.io/badge/Built%20by-Arthur%20%7C%20Disguised%20as%20Einstein-blueviolet?style=for-the-badge)
-
-> “Logic will get you from A to B. Responsive design will get you everywhere.”  
-> — _Albert Einstein, maybe._
-
----
