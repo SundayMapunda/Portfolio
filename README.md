@@ -51,7 +51,7 @@ The layout adjusts to various screen sizes. On smaller screens (under 768px):
 
 ## 🌐 How to View
 
-- The project is hosted and can be accessed through this link: sunday-mapunda.vercel.app
+- 🔗 **Live Demo:** [Click here to view the live site](https://sunday-mapunda.vercel.app)
 
 ---
 
