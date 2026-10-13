@@ -1,0 +1,158 @@
+---
+interface Props {
+  project: {
+    title: string;
+    type: string;
+    status: string;
+    featured: boolean;
+    description: string;
+    problem: string;
+    solution: string;
+    impact: string;
+    technologies: string[];
+    image: string | null;
+    links: {
+      github: string | null;
+      demo: string | null;
+      playStore: string | null;
+    };
+  };
+}
+
+const { project } = Astro.props;
+---
+
+<div class="row align-items-center g-5 mb-5">
+
+  <!-- Left column: optional screenshot + project card -->
+
+  <div class="col-lg-6">
+<!--- to be worked on later
+{project.image && (
+  <div class="mb-4">
+    <img
+      src={project.image}
+      alt={`${project.title} screenshot`}
+      class="img-fluid rounded-4 w-100"
+      loading="lazy"
+    />
+  </div>
+)}
+-->
+<div class="project-card bg-dark text-white rounded-4 p-4 p-md-5">
+
+{project.featured && (
+  <p class="project-featured small fw-bold text-uppercase mb-3">
+    ★ Featured Project
+  </p>
+)}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+  <p class="small text-secondary text-uppercase fw-semibold mb-0">
+    {project.type}
+  </p>
+
+  <span
+    class:list={[
+      "badge rounded-pill",
+      project.status === "Published"
+        ? "text-bg-success"
+        : project.status === "In Development"
+          ? "text-bg-warning"
+          : "text-bg-light",
+    ]}
+  >
+    {project.status}
+  </span>
+</div>
+
+<h3 class="display-6 fw-bold mb-4">
+  {project.title}
+</h3>
+
+  <p class="text-light mb-4">
+    {project.description}
+  </p>
+
+  <div class="d-flex flex-wrap gap-2">
+    {project.technologies.map((technology) => (
+      <span class="badge project-tech-badge">
+        {technology}
+      </span>
+    ))}
+  </div>
+
+  <!-- Display only the links that exist -->
+  {(project.links.github ||
+    project.links.demo ||
+    project.links.playStore) && (
+    <div class="d-flex flex-wrap gap-3 mt-4">
+
+      {project.links.github && (
+        <a
+          href={project.links.github}
+          class="btn btn-outline-primary project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      )}
+
+      {project.links.demo && (
+        <a
+          href={project.links.demo}
+          class="btn btn-primary project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Demo
+        </a>
+      )}
+
+      {project.links.playStore && (
+        <a
+          href={project.links.playStore}
+          class="btn btn-primary project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Play
+        </a>
+      )}
+
+    </div>
+  )}
+
+</div>
+
+  </div>
+
+  <!-- Right column: project details -->
+
+  <div class="col-lg-6">
+
+<div class="mb-4">
+  <h4 class="fw-bold">The problem</h4>
+  <p class="text-secondary">
+    {project.problem}
+  </p>
+</div>
+
+<div class="mb-4">
+  <h4 class="fw-bold">The solution</h4>
+  <p class="text-secondary">
+    {project.solution}
+  </p>
+</div>
+
+<div>
+  <h4 class="fw-bold">Impact</h4>
+  <p class="text-secondary">
+    {project.impact}
+  </p>
+</div>
+
+  </div>
+
+</div>

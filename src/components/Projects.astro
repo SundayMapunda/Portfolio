@@ -1,0 +1,31 @@
+--- 
+import ProjectCard from "./ProjectCard.astro"; 
+import projects from "../data/projects.js"; 
+---
+
+<section id="work" class="py-5 bg-light">
+	<div class="container py-5">
+
+		<div class="row mb-5">
+			<div class="col-lg-8">
+				<p class="text-uppercase fw-semibold text-secondary mb-2">
+					Selected Work
+				</p>
+
+				<h2 class="display-5 fw-bold mb-3">
+					Software built to solve real problems.
+				</h2>
+
+				<p class="lead text-secondary">
+					A selection of systems I've built to turn real-world needs
+					into practical digital solutions.
+				</p>
+			</div>
+		</div>
+
+		{ projects.map((project) => ( 
+			<ProjectCard project={project} /> 
+		))}
+
+	</div>
+</section>

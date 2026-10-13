@@ -1,0 +1,210 @@
+<section class="py-5">
+	<div class="container py-5">
+		<div class="row align-items-center min-vh-75">
+			<div class="col-lg-8">
+				<p class="text-uppercase fw-semibold text-secondary mb-3">
+					Software Engineer
+				</p>
+
+				<h1 class="display-3 fw-bold mb-4">
+					I turn business needs into practical, user-friendly software.
+				</h1>
+
+				<p class="lead text-secondary mb-4">
+					I enjoy building digital systems that solve real problems,
+					simplify everyday processes, and make technology useful to the
+					people who rely on it.
+				</p>
+
+				<div class="d-flex flex-wrap gap-3">
+					<a href="#work" class="btn btn-dark btn-lg px-4">
+						View my work
+					</a>
+
+					<a
+						href="/documents/Arthur-Alfred-CV.pdf"
+						class="btn btn-outline-dark btn-lg px-4"
+					>
+						Download CV
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+////////
+Navbar.astro:
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+	<div class="container py-2">
+		<a class="navbar-brand fw-bold" href="/">
+			Arthur Alfred
+		</a>
+
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#mainNavigation"
+			aria-controls="mainNavigation"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="mainNavigation">
+			<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+				<li class="nav-item">
+					<a class="nav-link" href="#work">Work</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#experience">Experience</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">Skills</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+
+				<li class="nav-item ms-lg-2">
+					<a class="btn btn-dark px-3" href="/documents/Arthur-Alfred-CV.pdf">
+						Download CV
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+////about
+<section id="about" class="py-5">
+	<div class="container py-5">
+		<div class="row g-5 align-items-center">
+
+			<div class="col-lg-5">
+				<p class="text-uppercase fw-semibold text-secondary mb-2">
+					About Me
+				</p>
+
+				<h2 class="display-5 fw-bold">
+					I build software with people, not just technology, in mind.
+				</h2>
+			</div>
+
+			<div class="col-lg-7">
+				<p class="lead mb-4">
+					I'm a Software Engineer who enjoys turning business needs into
+					working, user-friendly systems.
+				</p>
+
+				<p class="text-secondary mb-4">
+					My approach to software development starts with understanding the
+					problem before thinking about the technology. I enjoy taking an
+					idea or an existing process, understanding how people actually
+					use it, and turning it into something practical.
+				</p>
+
+				<p class="text-secondary mb-4">
+					I'm particularly interested in building web applications,
+					business systems, APIs and other digital solutions that make
+					real-world processes simpler and more reliable.
+				</p>
+
+				<p class="text-secondary mb-0">
+					I'm continuously learning, experimenting with new technologies,
+					and improving how I design and build software.
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+/////contact
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container py-5">
+
+    <div class="row g-5 align-items-center">
+
+      <div class="col-lg-7">
+        <p class="text-uppercase fw-semibold text-secondary mb-3">
+          Get in touch
+        </p>
+
+        <h2 class="display-4 fw-bold mb-4">
+          Have a problem that needs a software solution?
+        </h2>
+
+        <p class="lead text-light mb-4">
+          Whether you are looking to build a new system, improve an
+          existing process, or simply discuss an idea, I'd be happy
+          to hear from you.
+        </p>
+
+        <a
+          href="mailto:arthuralfred358@gmail.com"
+          class="btn btn-light btn-lg px-4"
+        >
+          Send me an email
+        </a>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="border border-secondary rounded-4 p-4">
+
+          <p class="small text-uppercase fw-semibold text-secondary mb-3">
+            Contact
+          </p>
+
+          <a
+            href="mailto:arthuralfred358@gmail.com"
+            class="text-white text-decoration-none d-block mb-4"
+          >
+            arthuralfred358@gmail.com
+          </a>
+
+          <p class="small text-uppercase fw-semibold text-secondary mb-3">
+            Location
+          </p>
+
+          <p class="mb-4">
+            Dar es Salaam, Tanzania
+          </p>
+
+          <p class="small text-uppercase fw-semibold text-secondary mb-3">
+            Profiles
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a
+              href="#"
+              class="text-white text-decoration-none"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="#"
+              class="text-white text-decoration-none"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

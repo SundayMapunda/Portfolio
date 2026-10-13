@@ -1,0 +1,39 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = "Arthur Alfred | Software Engineer",
+	description = "Software Engineer building practical, user-friendly digital solutions."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<meta name="description" content={description} />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+
+		<title>{title}</title>
+	</head>
+
+	<body>
+	<Navbar />
+
+	<slot />
+	<script>
+  		import "bootstrap/dist/js/bootstrap.bundle.min.js";
+	</script>
+	</body>
+</html>
